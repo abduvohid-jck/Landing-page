@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "poppins";
+  src: url("../assets/fonts/poppins.woff");
+}
+@font-face {
+  font-family: "mulish";
+  src: url("../assets/fonts/mulish.woff");
+}
+
+.features-box {
+  box-shadow: 34.85px 29.63px 48.34px 0px #3366ff0d;
+}
+.results-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  gap: 20px;
+}
+.results-card {
+  box-shadow: 34.85px 29.63px 48.34px 0px #3366ff0d;
+}
+.customers-box {
+  box-shadow: 34.85px 29.63px 48.34px 0px #3366ff0d;
+}
+
+@media (min-width: 780px) {
+  .results-wrapper {
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-between;
+  }
+  .customers-rates {
+    transform: translateX(-55px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .results-wrapper {
+    grid-template-columns: repeat(4, 20%);
+  }
+  .customers-rates {
+    transform: translateX(0px);
+  }
+}
